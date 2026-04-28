@@ -1,48 +1,82 @@
+//Nomeclatura : Snake_Case
+//Giovanna
 <?php
 
-namespace matematica; {
+//dolarParaReal 
 
-    function Somar($a, $b, $c)
-    {
-        return $a + $b + $c;
-    }
-}
+$cotacao=5 ;  
+$valor=100;
 
-namespace texto; {
-
-    function Concatenar($nome, $sobrenome)
-    {
-
-        return $nome . "  " . $sobrenome;
-    }
-}
-
-namespace logica; {
-    function verificaidade($idade)
-    {
-        if ($idade >= 18) {
-            return "Maior de idade!";
-        } else {
-            return "Menor de idade!";
-        }
-    }
-}
-
-namespace logica{
-    function verificaidade($idade) {
-        {
-            function Exercito ($sexo , $idade ){
-                if($idade >= 18 && $sexo == "Masculino"){
-                    return "Voce está apto a servir o Exercicito";
-                }
-                else{ 
-                    return "Voce nao cumpre aos requisitos";
-                }
-
-            }
+namespace conversao {
     
-        }
+function dolarParaReal ($valor , $cotacao );
+return $valor * $cotacao ; 
+} 
 
-    }
+$resultado = multiplicar($valor, $cotacao);
+
+echo "Valor convertido: " . $resultado . "\n";
+
+//euroParaReal
+
+$cotacao=5,85 ;  
+$valor=100;
+
+namespace conversao {
+    
+function euroParaReal ($valor , $cotacao );
+return $valor * $cotacao ; 
+} 
+
+$resultado = multiplicar($valor, $cotacao);
+
+echo "Valor convertido: " . $resultado . "\n";
+
+//PesoMexicanoParaReal
+
+
+$cotacao = 0,29 ;  
+$valor = 100;
+
+namespace conversao {
+    
+function pesoMexicanoParaReal ($valor , $cotacao );
+return $valor * $cotacao ; 
+} 
+
+$resultado = multiplicar($valor, $cotacao);
+
+echo "Valor convertido: " . $resultado . "\n";
+
+//LibraEsterlinaParaReal
+
+$cotacao = 6,72 ;  
+$valor = 100;
+
+namespace conversao {
+    
+function libraParaReal ($valor , $cotacao );
+return $valor * $cotacao ; 
+} 
+
+$resultado = multiplicar($valor, $cotacao);
+
+echo "Valor convertido: " . $resultado . "\n";
+
+//IeniParaReal
+
+
+$cotacao = 0,031 ;  
+$valor = 100;
+
+namespace conversao {
+    
+function ieniParaReal ($valor , $cotacao );
+return $valor * $cotacao ; 
+} 
+
+$resultado = multiplicar($valor, $cotacao);
+
+echo "Valor convertido: " . $resultado . "\n";
 
 ?>;
